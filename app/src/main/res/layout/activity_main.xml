@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="721dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="361dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="COUNTER APP"
+            android:textColor="#3F51B5"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCounter"
+            android:layout_width="303dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="60dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="100sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btnCount"
+            android:layout_width="300dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="60dp"
+            android:text="COUNTER"
+            android:textColor="#03A9F4"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCounter" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="116dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="284dp"
+            android:text="RESET"
+            android:textColor="#03A9F4"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
